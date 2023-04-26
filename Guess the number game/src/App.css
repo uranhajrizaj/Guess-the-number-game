@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Playfair+Display:ital,wght@1,600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  height: 100%;
+  gap: 2rem;
+  background-color: #a5c0dd;
+  padding: 1rem;
+  background-position: fixed;
+}
+
+.app {
+  display: grid;
+  place-content: start center;
+  gap: 2rem;
+}
+h1,
+h3 {
+  place-self: center;
+  font-family: "Dancing Script", cursive;
+  font-family: "Playfair Display", serif;
+}
+.instructions {
+  place-self: start center;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 5px;
+}
+.game {
+  display: grid;
+  place-self: start center;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 5px;
+  gap: 1rem;
+}
+
+.row {
+  display: grid;
+  grid-auto-flow: column;
+  list-style: none;
+  gap: 3px;
+}
+
+.cell {
+  width: 60px;
+  height: 60px;
+  background-color: #408e91;
+  margin-bottom: 3px;
+  display: grid;
+  place-content: center;
+  font-size: 2rem;
+}
+
+.table {
+  display: grid;
+  place-content: center;
+}
+
+button {
+  display: grid;
+  place-self: center;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #d8d8d8;
+}
+.color {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  place-self: center;
+}
+.green {
+  background-color: rgb(0, 255, 0);
+  width: 60px;
+  height: 60px;
+  margin-bottom: 3px;
+  display: grid;
+  place-content: center;
+  font-size: 2rem;
+}
+.yellow {
+  background-color: rgb(242, 255, 0);
+  width: 60px;
+  height: 60px;
+  margin-bottom: 3px;
+  display: grid;
+  place-content: center;
+  font-size: 2rem;
+}
+.red {
+  background-color: red;
+  width: 60px;
+  height: 60px;
+  margin-bottom: 3px;
+  display: grid;
+  place-content: center;
+  font-size: 2rem;
+}
+.cgreen {
+  background-color: rgb(0, 255, 0);
+}
+.cred {
+  background-color: red;
+}
+.cyellow {
+  background-color: rgb(242, 255, 0);
+}
+ul {
+  display: grid;
+  place-items: start;
+}
+li {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 5px;
+}
+.game-countainer {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 1rem;
+}
+.input-number {
+  display: grid;
+  gap: 0.6rem;
+  place-self: center;
+}
+.error {
+  color: red;
+  word-wrap: break-word;
+  width: 10rem;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+  width: 70px;
+  padding: 5px;
+}
+.input-button {
+  display: grid;
+  grid-auto-flow: column;
+  place-content: center start;
+  gap: 5px;
+}
+button {
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  filter: brightness(90%);
+}
+.subtitle {
+  text-align: center;
+  font-size: 1.5rem;
+}
+.win-game {
+  background-color: #eb455f;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+}
+
+.lose-game {
+  background-color: red;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+}
